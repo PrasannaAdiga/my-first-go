@@ -10,7 +10,7 @@ var DB *sql.DB
 
 func InitDB() {
 	var err error
-	DB, err = sql.Open("sqlite3", "api.db") // driver name here is sqlite to use go-sqlite3 under the hood
+	DB, err = sql.Open("sqlite3", "api.db") // driver name here is sqlite to use go-sqlite3(SQLite database) under the hood
 	// data source name will be any local file name which will be created automatically instead of storing in a real db
 	// All the data will be stored in this file and we can interact with it through sql queries.
 
